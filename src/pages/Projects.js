@@ -104,7 +104,7 @@ const Projects = () => {
         <Table>
           <TableHeader>
             <tr>
-              <TableCell>Name</TableCell>
+              <TableCell>Namee</TableCell>
               <TableCell>Link</TableCell>
 
               <TableCell>Date</TableCell>

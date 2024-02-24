@@ -106,7 +106,7 @@ const CreateProject = () => {
 
   // handle submit
   const handleSubmit = async () => {
-    if (projectName && imgUrl && projectLink && type) {
+    if (projectName) {
       setloading(true);
 
       try {
@@ -175,7 +175,7 @@ const CreateProject = () => {
 
   // handle submit
   const handleUpdate = async () => {
-    if (projectName && imgUrl && projectLink && type) {
+    if (projectName) {
       setloading(true);
 
       try {
@@ -252,7 +252,7 @@ const CreateProject = () => {
 
       <div className="px-4 py-8 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800 ">
         <Label>
-          <span>Project Name</span>
+          <span>Project Namee</span>
           <Input
             className="mt-1"
             name="projectName"
@@ -354,7 +354,7 @@ const CreateProject = () => {
         </div>
 
         <Label className="mt-5">
-          <span>Project Link</span>
+          <span>Project Linkkk</span>
           <Input
             className="mt-1"
             name="projectLink"
@@ -440,10 +440,7 @@ const CreateProject = () => {
         </div>
 
         <div className="mt-5">
-          <Button
-            disabled={loading || (!id && progress !== 100)}
-            onClick={id ? handleUpdate : handleSubmit}
-          >
+          <Button disabled={loading} onClick={id ? handleUpdate : handleSubmit}>
             {loading ? <div class="lds-dual-ring"></div> : "Submit"}
           </Button>
         </div>
